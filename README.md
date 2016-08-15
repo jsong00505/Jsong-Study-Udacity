@@ -1,6 +1,10 @@
 # study_udacity
 share what I have studied at udacity.com.
 
+class#: udacity-cs253
+
+my study site: [Link][appengine-site]
+
 # Unit 1
 * Just know how to use Google App Engine.
 * The app name should be the same with the domain name which I make
@@ -13,3 +17,5 @@ share what I have studied at udacity.com.
     * redirect to "welcome" page
     * email field is optional
     * validation
+	
+[appengine-site]: https://udacity-dev-1610.appspot.com
