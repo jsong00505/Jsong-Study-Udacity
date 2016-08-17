@@ -37,10 +37,6 @@ rot13Form = """
 
 </html>
 """
-def escape_html(s):
-    for (i, o) in (("&", "&amp;"),(">", "&gt;"),("<", "&lt;"),('"', "&quot;")):
-        s = s.replace(i, o)
-    return s
 
 def doRot13(text):
 	lowerCase = string.lowercase
@@ -58,7 +54,7 @@ def doRot13(text):
 			new_s = upperCase[new_index]
 			result.append(new_s)
 		else:
-			result.append(escape_html(s))
+			result.append(s)
 	return ''.join(result)
 	
 class Rot13Handler(webapp2.RequestHandler):
