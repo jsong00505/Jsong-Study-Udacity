@@ -1,9 +1,9 @@
 # study_udacity
 share what I have studied at udacity.com.
 
-class#: udacity-cs253
+class#: [udacity-cs253][udacity-cs253-site]
 
-my study site: [Link][appengine-site]
+my study site: [Link][my-appengine-site]
 
 # Unit 1
 * Just know how to use Google App Engine.
@@ -17,5 +17,13 @@ my study site: [Link][appengine-site]
     * redirect to "welcome" page
     * email field is optional
     * validation
-	
-[appengine-site]: https://udacity-dev-1610.appspot.com
+
+# Unit 2-a
+* Jinja2
+	* [Jinja homepage][jinja-site]
+	* template
+	* adding library on app.yaml
+
+[udacity-cs253-site]: https://classroom.udacity.com/courses/cs253
+[my-appengine-site]: https://udacity-dev-1610.appspot.com
+[jinja-site]: http://jinja.pocoo.org
