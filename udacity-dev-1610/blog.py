@@ -19,11 +19,6 @@ import logging
 import webapp2
 import jinja2
 
-import rot13
-import signup
-import welcome
-import blog
-
 template_dir = os.path.join(os.path.dirname(__file__), 'templates')
 jinja_env = jinja2.Environment(loader = jinja2.FileSystemLoader(template_dir))
 
@@ -36,37 +31,14 @@ class Handler(webapp2.RequestHandler):
     def render(self, template, **kw):
         self.write(self.render_str(template, **kw))
 
-class MainHandler(Handler):
+class BlogHandler(Handler):
     def get(self):
-        #self.response.headers['Content-Type'] = 'text/plain'
-        self.render("navigation.html")
+        self.render("blog_index.html")
     def post(self):
-        path=self.request.get("path")
-        if path == "rot13":
-            self.redirect("/unit2/rot13")
-        elif path == "signup":
-            self.redirect("/unit2/signup")
-        elif path == "blog":
-            self.redirect("/blog")
-        else:
-            self.redirect("/testform")
+        self.render("blog_index.html")
 
-
-class TestHandler(webapp2.RequestHandler):
+class NewPostHandler(Handler):
     def get(self):
-        self.response.headers['Content-Type'] = 'text/plain'
-        self.response.out.write(self.request)
-        #q=self.request.get("q")
-		#self.response.out.write(q)
-
-
-		
-app = webapp2.WSGIApplication([
-    ('/', MainHandler),
-    ('/testform', TestHandler),
-	('/unit2/rot13', rot13.Rot13Handler),
-    ('/unit2/signup', signup.SignupHandler),
-    ('/unit2/welcome', welcome.WelcomeHandler),
-    ('/blog', blog.BlogHandler),
-    ('/blog/newpost', blog.NewPostHandler)
-], debug=True)
+        self.render("blog_newpost.html")
+    def post(self):
+        self.render("blog_newpost.html")

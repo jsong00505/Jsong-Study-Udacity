@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html lang="en">
+    {% include "blog_head.html" %}
+<body>
+    {% include "blog_header.html" %}
+    <div>
+        <div>
+            {% block content %}
+            {% endblock %}
+        </div>
+    </div>
+
+{% include "blog_footer.html" %}
+</body>
+</html>
