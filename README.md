@@ -24,6 +24,10 @@ my study site: [Link][my-appengine-site]
 	* template
 	* adding library on app.yaml
 
+# Unit 3
+* [Serving Static Files-Python][serving-static-files]
+
 [udacity-cs253-site]: https://classroom.udacity.com/courses/cs253
 [my-appengine-site]: https://udacity-dev-1610.appspot.com
 [jinja-site]: http://jinja.pocoo.org
+[serving-static-files]:https://cloud.google.com/appengine/docs/python/getting-started/serving-static-files

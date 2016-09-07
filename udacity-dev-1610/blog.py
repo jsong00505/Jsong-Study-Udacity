@@ -22,6 +22,12 @@ import jinja2
 template_dir = os.path.join(os.path.dirname(__file__), 'templates')
 jinja_env = jinja2.Environment(loader = jinja2.FileSystemLoader(template_dir))
 
+def valid_subject(subject):
+    return subject
+
+def valid_blog(blog):
+    return blog
+
 class Handler(webapp2.RequestHandler):
     def write(self, *a, **kw):
         self.response.out.write(*a, **kw)
@@ -41,4 +47,18 @@ class NewPostHandler(Handler):
     def get(self):
         self.render("blog_newpost.html")
     def post(self):
-        self.render("blog_newpost.html")
+        subject = self.request.get("subject")
+        blog = self.request.get("blog")
+
+        error_msg = ""
+        error_flag = False
+
+        if not valid_subject(subject) or not valid_blog(blog):
+            error_msg = "subject and blog, please!"
+            error_flag = True
+
+        if error_flag:
+            self.render("blog_newpost.html", error_msg=error_msg)
+        else:
+            #need to update the content of the post
+            self.render("blog_posting_succeed.html", msg="succeed")

@@ -2,49 +2,31 @@
 
 {% block content %}
 <form method="post">
+    <h3>new post</h3>
     <table>
         <tr>
             <td class="label">
-            Username
+            subject
             </td>
+        </tr>
+        <tr>
             <td>
-                <input type="text" name="username" value="">
+                <input type="text" name="subject" value="">
             </td>
-          <td class="error">
-            {{ error_username }}
-          </td>
         </tr>
         <tr>
           <td class="label">
-            Password
-          </td>
-          <td>
-            <input type="password" name="password" value="">
-          </td>
-          <td class="error">
-            {{ error_password }}
+            blog
           </td>
         </tr>
         <tr>
-          <td class="label">
-            Verify Password
-          </td>
-          <td>
-            <input type="password" name="verify" value="">
-          </td>
-          <td class="error">
-            {{ error_verify }}
-          </td>
+            <td>
+          <textarea name="blog"></textarea>
+            </td>
         </tr>
         <tr>
-          <td class="label">
-            Email (optional)
-          </td>
-          <td>
-            <input type="text" name="email" value="">
-          </td>
-          <td class="error">
-            {{ error_email }}
+            <td class="error">
+            {{ error_msg }}
           </td>
         </tr>
       </table>
