@@ -8,9 +8,9 @@ share what I have studied at udacity.com.
 
 Checked list is completed to study:
 
-[ ]class#1: [udacity-cs253][udacity-cs253-site]
-[ ]class#2: [udacity-vr-nanodegree][udacity-vr-nanodegree-site]
-[X]class#3: [udacity-writing-readmes][udacity-writing-readmes-site]
+- [ ]class#1: [udacity-cs253][udacity-cs253-site]
+- [ ]class#2: [udacity-vr-nanodegree][udacity-vr-nanodegree-site]
+- [X]class#3: [udacity-writing-readmes][udacity-writing-readmes-site]
 
 
 ## LICENSE
