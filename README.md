@@ -1,33 +1,21 @@
-# study_udacity
+# Study Udacity
+
+## INTRO
+
 share what I have studied at udacity.com.
 
-class#: [udacity-cs253][udacity-cs253-site]
+## STUDY LIST
 
-my study site: [Link][my-appengine-site]
+Checked list is completed to study:
 
-# Unit 1
-* Just know how to use Google App Engine.
-* The app name should be the same with the domain name which I make
+[ ]class#1: [udacity-cs253][udacity-cs253-site]
+[ ]class#2: [udacity-vr-nanodegree][udacity-vr-nanodegree-site]
+[X]class#3: [udacity-writing-readmes][udacity-writing-readmes-site]
 
-# Unit 2
-* Rot13
-	* escape.
-	* make a range, [a-z][A-Z]. 
-* SignUp(2016.08.15)
-    * redirect to "welcome" page
-    * email field is optional
-    * validation
 
-# Unit 2-a
-* Jinja2
-	* [Jinja homepage][jinja-site]
-	* template
-	* adding library on app.yaml
-
-# Unit 3
-* [Serving Static Files-Python][serving-static-files]
+## LICENSE
+`Study Udacity` is Copyright 2016 Jsong. It is free, and may be redistributed under the terms specified in the [LICENSE](http://choosealicense.com/licenses/mit/) file.
 
 [udacity-cs253-site]: https://classroom.udacity.com/courses/cs253
-[my-appengine-site]: https://udacity-dev-1610.appspot.com
-[jinja-site]: http://jinja.pocoo.org
-[serving-static-files]:https://cloud.google.com/appengine/docs/python/getting-started/serving-static-files
+[udacity-vr-nanodegree-site]: https://www.udacity.com/course/vr-developer-nanodegree--nd017
+[udacity-writing-readmes-site]:https://www.udacity.com/course/writing-readmes--ud777
