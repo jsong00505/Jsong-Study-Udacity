@@ -37,4 +37,5 @@
 
 #### Canvas
 * Unity defaults to rendering the UI Canvas on the entire screen which is called screen space
+
 [<- Previous](README-3-3.md) ..... [Next ->](README-3-4.md)

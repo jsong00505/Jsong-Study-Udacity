@@ -68,4 +68,5 @@ This tells unity that we want to **move**(not rotate and not scale) an object in
 	```C
 	transform.position = new Vector3(0, 5 + Mathf.Sin (Time.time * 5.0f), 0);
 	```
+
 [<- Previous](README.md) ..... [Next ->](README-3-2.md)
