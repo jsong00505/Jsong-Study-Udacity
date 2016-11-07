@@ -38,4 +38,42 @@
 #### Canvas
 * Unity defaults to rendering the UI Canvas on the entire screen which is called screen space
 
+## Event System and Inputs
+
+### Practice2
+1. Create `UI` and `EventSystem`
+2. Remove `Standalone Input Module`
+3. Go to `Add Component`
+4. Search `gaze input module`
+5. Press Enter
+6. Click `VacationBox`
+7. Go to `Add Component`
+8. Search for `box collider`
+9. Go to `Add Component`
+10. Add a component called an `Event Trigger`
+11. See a new button appear called `Add New Event Type`, and click on that
+12. Select `PointerClick`
+13. Click that little plus on the left bottom
+
+## Methods and Debugging
+
+### Practice3
+1. Select `VacationBox`, and go to the inspector
+2. Go to `Add Component`
+3. Type `ChangeScene`, and have only option `New Script`. Click
+4. Click `Create and Add`
+5. Double click the script and open it up
+6. Delete both `Start()` and `Update()` method
+7. Type `public void GoToScene() {}`
+8. Type `Debug.Log("My method was called!");` inside `GoToScene()` method
+9. Go back to Unity
+10. Select `VacationBox`
+11. Scroll down to the `Event Trigger`
+12. Drag `VacationBox` all the way over to that little slot for an object in the `Event Trigger`
+13. Click drop-down box that says `No Function`, and then `ChangeScene`, and then `GoToScene ()`
+14. Let's test it
+
+## Scene Changing Via Script
+
+
 [<- Previous](README-3-3.md) ..... [Next ->](README-3-4.md)
