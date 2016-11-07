@@ -1,1 +1,4 @@
-sceneSetups: []
+sceneSetups:
+- path: Assets/VRND-Course3-Course_Assets/Scenes/01-TakeAVacation.unity
+  isLoaded: 1
+  isActive: 1
