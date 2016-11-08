@@ -34,6 +34,7 @@ However, I just covered common stuff, so I think it would work properly.
 3. Double click "VRND-Course2-Starter_Project.unity"
 
 or
+
 1. Clone: `git clone https://github.com/jsong00505/Jsong-Study-Udacity.git`
 2. Launch Unity and click "open"
 3. Find where "VRND-Course2-Starter_Project.unity" is and open.
