@@ -1,4 +1,4 @@
 sceneSetups:
-- path: Assets/VRND-Course3-Course_Assets/Scenes/01-TakeAVacation.unity
+- path: Assets/VRND-Course3-Course_Assets/Scenes/ProgrammingAnimations.unity
   isLoaded: 1
   isActive: 1

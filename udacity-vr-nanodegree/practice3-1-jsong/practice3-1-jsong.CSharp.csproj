@@ -124,6 +124,7 @@
     <Compile Include="Assets\MyFirstBehavior.cs" />
     <Compile Include="Assets\MyMiniObjectMaker.cs" />
     <Compile Include="Assets\ObjectMaker.cs" />
+    <Compile Include="Assets\RotateLight.cs" />
     <Compile Include="Assets\VRND-Course3-Course_Assets\Scripts\Animations\LeafAnimation.cs" />
     <Compile Include="Assets\VRND-Course3-Course_Assets\Scripts\Animations\RandomPath.cs" />
     <Compile Include="Assets\VRND-Course3-Course_Assets\Scripts\Debug\Debugging.cs" />
