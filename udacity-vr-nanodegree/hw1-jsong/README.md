@@ -24,6 +24,7 @@ However, I just covered common stuff, so I think it would work properly.
 3. Double click "ModifiedGoogleDemoScene.unity"
 
 or
+
 1. Clone: `git clone https://github.com/jsong00505/Jsong-Study-Udacity.git`
 2. Launch Unity and click "open"
 3. Find where "ModifiedGoogleDemoScene.unity" is and open.
