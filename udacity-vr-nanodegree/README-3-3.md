@@ -1,6 +1,6 @@
 # VR Interaction
 [<- Previous](README-3-3.md) ..... [Next ->](README-3-4.md)
-## Basic UI in Unity
+## 1. Basic UI in Unity
 
 ### Practice1
 1. open up the starter project, and if you don't have the project, [download](https://d17h27t6h515a5.cloudfront.net/topher/2016/October/58178819_vrnd-course3-course-assets-000/vrnd-course3-course-assets-000.zip)
@@ -38,7 +38,7 @@
 #### Canvas
 * Unity defaults to rendering the UI Canvas on the entire screen which is called screen space
 
-## Event System and Inputs
+## 2. Event System and Inputs
 
 ### Practice2
 1. Create `UI` and `EventSystem`
@@ -55,7 +55,7 @@
 12. Select `PointerClick`
 13. Click that little plus on the left bottom
 
-## Methods and Debugging
+## 3. Methods and Debugging
 
 ### Practice3
 1. Select `VacationBox`, and go to the inspector
@@ -73,7 +73,37 @@
 13. Click drop-down box that says `No Function`, and then `ChangeScene`, and then `GoToScene ()`
 14. Let's test it
 
-## Scene Changing Via Script
+## 4. Scene Changing Via Script
 
+### Practice4
+1. Go `File` -> `Build Settings`
+2. See `Scenes In Build`
+3. Drag-and-drop `TakeAVacation` and `FallingCoconut`
+4. `TakeAVacation` should be on top, so Unity automatically load the first scene in the `Build Settings`
+5. Close the window
+6. Go back to the script `ChangeScene` and loaded up
+7. Type `SceneManager.LoadScene("name of scene to load");` below the debugging code
+8. See the problem because there is no idea what to do with `SceneManager`
+9. Add `using UnityEngine.SceneManagement;` on top of the script
+10. Go back to Unity and find island scene
+11. Click once and select the name of the scene called `FallingCoconut`
+12. Press `ctrl-c` to copy the name and then back to the script. Replace the name of `name of scene to load` to `00-FallingCoconut`
+13. Also, I could use what's called an index which is the name or the number of the scene
+14. Sava and then go back to Unity
+15. Press `Play`
+
+## 5. The Power of Variables
+
+### Practice5
+1. Go to the script and instead of the name `00-FallingCoconut`
+2. Change to variable named `sceneName`
+3. Put it as parameter to this method like `public void GoToScene(string sceneName)`
+4. Go back to Unity and select `VacationBox`
+5. Scroll down and can't find GoToScene method anymore
+6. Scroll down and find that method called `ChangeScene.GoToScene(string)`
+7. See a `TextBox` and type the name of the scene
+8. Copy and Paste like before
+9. Press `ctrl-s` to save
+10. Try one more time
 
 [<- Previous](README-3-3.md) ..... [Next ->](README-3-4.md)
