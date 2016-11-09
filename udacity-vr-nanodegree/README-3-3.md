@@ -1,5 +1,5 @@
 # VR Interaction
-[<- Previous](README-3-3.md) ..... [Next ->](README-3-4.md)
+[<- Previous](README-3-2.md) ..... [Next ->](README-3-4.md)
 ## 1. Basic UI in Unity
 
 ### Practice1
@@ -106,4 +106,4 @@
 9. Press `ctrl-s` to save
 10. Try one more time
 
-[<- Previous](README-3-3.md) ..... [Next ->](README-3-4.md)
+[<- Previous](README-3-2.md) ..... [Next ->](README-3-4.md)

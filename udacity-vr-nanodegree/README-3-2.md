@@ -1,5 +1,5 @@
 # CONTROLLING OBJECTS USING CODE
-[<- Previous](README-3-2.md) ..... [Next ->](README-3-3.md)
+[<- Previous](README-3-1.md) ..... [Next ->](README-3-3.md)
 ## 1. Documentation
 
 ### Unity Documentation
@@ -175,4 +175,4 @@ Talking to the new seagull that we created and finding out a way to change its c
 2. Find the material associated that renderer
 3. Change the color
 
-[<- Previous](README-3-2.md) ..... [Next ->](README-3-3.md)
+[<- Previous](README-3-1.md) ..... [Next ->](README-3-3.md)
