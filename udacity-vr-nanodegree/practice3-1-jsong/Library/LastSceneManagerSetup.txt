@@ -1,4 +1,4 @@
 sceneSetups:
-- path: Assets/VRND-Course3-Course_Assets/Scenes/ProgrammingAnimations.unity
+- path: Assets/VRND-Course3-Course_Assets/Scenes/Island.unity
   isLoaded: 1
   isActive: 1
