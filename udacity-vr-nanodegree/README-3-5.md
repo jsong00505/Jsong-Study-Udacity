@@ -40,4 +40,31 @@ We've appropriately defined collision area for an object, and then we need to as
 10. Press 'Play'
 11. See the `TreasureChest`, you can see the message `There is something in front of the object`
 
+## 3. Using Audio in VR
+
+### Practice3
+1. Just go to `Audio` folder called `waves.wav`
+2. Create `Audio Source` component
+3. Drag-and-drop `waves.wav` onto the `AudioClip` in the component we created
+4. `Audio Listener` component makes us how far the `Audio` is from the camera
+
+## 4. Creating a List
+
+### Practice4
+1. Create new `C# Script` called `AudioPicker`
+2. Type `public AudioClip[] soundFiles;`
+3. Type `public AudioSource soundSource;`
+4. Go back to Unity and select `AudioSource`
+5. Choose size of array
+6. Set the clips on the `Elements` box
+7. Drag-and-drop the `AudioSource` in `Sound Source`
+
+## 5. Picking a Song
+
+### Practice5
+1. Jump back to the script
+2. Type `int index = Random.Range(0, soundFiles.Length);` in `Start()` method
+3. Type `soundSource.clip = soundFiles[index];`
+4. Type `soundSource.Play ();` to play the random song
+
 [<- Previous](README-3-4.md) ..... [Next ->](README-3-6.md)
