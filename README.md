@@ -11,6 +11,7 @@ Checked list is completed to study:
 - [ ] class#1: [udacity-cs253][udacity-cs253-site]
 - [ ] class#2: [udacity-vr-nanodegree][udacity-vr-nanodegree-site]
 - [x] class#3: [udacity-writing-readmes][udacity-writing-readmes-site]
+- [ ] class#4: [udacity-intro-to-algorithms][udacity-intro-to-algorithms-site]
 
 
 ## LICENSE
@@ -19,3 +20,4 @@ Checked list is completed to study:
 [udacity-cs253-site]: https://classroom.udacity.com/courses/cs253
 [udacity-vr-nanodegree-site]: https://www.udacity.com/course/vr-developer-nanodegree--nd017
 [udacity-writing-readmes-site]:https://www.udacity.com/course/writing-readmes--ud777
+[udacity-intro-to-algorithms-site]:https://classroom.udacity.com/courses/cs215/
