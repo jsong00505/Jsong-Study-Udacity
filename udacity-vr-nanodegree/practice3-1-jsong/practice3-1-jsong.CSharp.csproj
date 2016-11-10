@@ -75,6 +75,7 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Assets\AudioPicker.cs" />
     <Compile Include="Assets\ChangeScene.cs" />
     <Compile Include="Assets\DetectTreasure.cs" />
     <Compile Include="Assets\GoogleVR\DemoScenes\ControllerDemo\ControllerDebugInfo.cs" />
@@ -125,6 +126,7 @@
     <Compile Include="Assets\MyFirstBehavior.cs" />
     <Compile Include="Assets\MyMiniObjectMaker.cs" />
     <Compile Include="Assets\ObjectMaker.cs" />
+    <Compile Include="Assets\Open.cs" />
     <Compile Include="Assets\RotateLight.cs" />
     <Compile Include="Assets\VRND-Course3-Course_Assets\Scripts\Animations\LeafAnimation.cs" />
     <Compile Include="Assets\VRND-Course3-Course_Assets\Scripts\Animations\RandomPath.cs" />
