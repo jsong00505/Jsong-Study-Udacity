@@ -10,13 +10,15 @@ public class DetectTreasure : MonoBehaviour {
     {
         Vector3 fwd = transform.TransformDirection(Vector3.forward);
 
-        if (Physics.Raycast(transform.position, fwd, 10) && !watched)
+        if (Physics.Raycast(transform.position, fwd, 10))
         {
             if(watched == false)
             {
-                print("The chest will be open!");
+
                 Anim.SetTrigger("Open");
+                Anim.SetBool("OpenBool", true);
                 watched = true;
+                print("The chest will be open!");
             } else
             {
                 print("The chest was already opened!");
