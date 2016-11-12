@@ -4,21 +4,23 @@ using System.Collections;
 public class DetectTreasure : MonoBehaviour {
 
     public Animator Anim;
+
     bool watched = false;
     void FixedUpdate()
     {
         Vector3 fwd = transform.TransformDirection(Vector3.forward);
 
-        if (Physics.Raycast(transform.position, fwd, 10))
+        if (Physics.Raycast(transform.position, fwd, 10) && !watched)
         {
-            print("There is something in front of the object!");
             if(watched == false)
             {
+                print("The chest will be open!");
                 Anim.SetTrigger("Open");
                 watched = true;
+            } else
+            {
+                print("The chest was already opened!");
             }
-            
-                //SetBool("ChangeColor", true);
         }
             
     }
