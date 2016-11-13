@@ -3,25 +3,22 @@ using System.Collections;
 
 public class DetectTreasure : MonoBehaviour {
 
-    public Animator Anim;
+    [SerializeField]
+    private Animator Anim;
 
-    bool watched = false;
-    void FixedUpdate()
+    private bool watched = false;
+    private void FixedUpdate()
     {
         Vector3 fwd = transform.TransformDirection(Vector3.forward);
 
         if (Physics.Raycast(transform.position, fwd, 10))
         {
-            if(watched == false)
+            if(!watched)
             {
-
-                Anim.SetTrigger("Open");
                 Anim.SetBool("OpenBool", true);
+                Anim.SetBool("OpenBool", false);
                 watched = true;
-                print("The chest will be open!");
-            } else
-            {
-                print("The chest was already opened!");
+                //print("The chest will be open!");
             }
         }
             
