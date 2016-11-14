@@ -5,6 +5,7 @@ def russian(a,b):
         if x % 2 == 1: z = z + y
         y = y << 1
         x = x >> 1
+        print y
     return z
 
 print russian(14, 11)

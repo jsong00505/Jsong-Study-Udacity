@@ -30,12 +30,54 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="russian.py" pinned="false" current-in-tab="true">
+      <file leaf-file-name="russian.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Lesson1-social-network-analysis/russian.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="133">
-              <caret line="7" column="12" selection-start-line="7" selection-start-column="12" selection-end-line="7" selection-end-column="12" />
+            <state relative-caret-position="19">
+              <caret line="1" column="16" selection-start-line="1" selection-start-column="16" selection-end-line="1" selection-end-column="16" />
               <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="clique.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Lesson1-social-network-analysis/clique.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="133">
+              <caret line="7" column="0" selection-start-line="7" selection-start-column="0" selection-end-line="8" selection-end-column="17" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="find_eulerian_tour.py" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/Lesson1-social-network-analysis/find_eulerian_tour.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="323">
+              <caret line="17" column="0" selection-start-line="17" selection-start-column="0" selection-end-line="17" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="eulerian_tour_ver_1.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Lesson1-social-network-analysis/eulerian_tour_ver_1.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="567">
+              <caret line="89" column="0" selection-start-line="89" selection-start-column="0" selection-end-line="89" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="rec_naive.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Lesson1-social-network-analysis/rec_naive.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="19">
+              <caret line="1" column="11" selection-start-line="1" selection-start-column="11" selection-end-line="1" selection-end-column="11" />
+              <folding>
+                <marker date="1479131137448" expanded="true" signature="20:85" ph="..." />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -53,7 +95,13 @@
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/Lesson1-social-network-analysis/naive.py" />
+        <option value="$PROJECT_DIR$/Lesson1-social-network-analysis/EulerianTourVer1.py" />
+        <option value="$PROJECT_DIR$/Lesson1-social-network-analysis/eulerian_tour_ver_1.py" />
+        <option value="$PROJECT_DIR$/Lesson1-social-network-analysis/rec_naive.py" />
         <option value="$PROJECT_DIR$/Lesson1-social-network-analysis/russian.py" />
+        <option value="$PROJECT_DIR$/Lesson1-social-network-analysis/v;owir.py" />
+        <option value="$PROJECT_DIR$/Lesson1-social-network-analysis/clique.py" />
+        <option value="$PROJECT_DIR$/Lesson1-social-network-analysis/find_eulerian_tour.py" />
       </list>
     </option>
   </component>
@@ -89,6 +137,7 @@
     </navigator>
     <panes>
       <pane id="Scope" />
+      <pane id="Scratches" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -123,10 +172,9 @@
           </PATH>
         </subPane>
       </pane>
-      <pane id="Scratches" />
     </panes>
   </component>
-  <component name="RunManager" selected="Python.russian">
+  <component name="RunManager" selected="Python.clique">
     <configuration default="false" name="naive" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -157,6 +205,40 @@
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <module name="udacity-intro-to-algorithms" />
       <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Lesson1-social-network-analysis/russian.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <method />
+    </configuration>
+    <configuration default="false" name="EulerianTourVer1" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Lesson1-social-network-analysis" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="udacity-intro-to-algorithms" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Lesson1-social-network-analysis/EulerianTourVer1.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <method />
+    </configuration>
+    <configuration default="false" name="clique" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Lesson1-social-network-analysis" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="udacity-intro-to-algorithms" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Lesson1-social-network-analysis/clique.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <method />
@@ -295,14 +377,18 @@
       <option name="USE_KEYWORD" value="false" />
       <method />
     </configuration>
-    <list size="2">
+    <list size="4">
       <item index="0" class="java.lang.String" itemvalue="Python.naive" />
       <item index="1" class="java.lang.String" itemvalue="Python.russian" />
+      <item index="2" class="java.lang.String" itemvalue="Python.EulerianTourVer1" />
+      <item index="3" class="java.lang.String" itemvalue="Python.clique" />
     </list>
     <recent_temporary>
-      <list size="2">
-        <item index="0" class="java.lang.String" itemvalue="Python.russian" />
-        <item index="1" class="java.lang.String" itemvalue="Python.naive" />
+      <list size="4">
+        <item index="0" class="java.lang.String" itemvalue="Python.clique" />
+        <item index="1" class="java.lang.String" itemvalue="Python.russian" />
+        <item index="2" class="java.lang.String" itemvalue="Python.EulerianTourVer1" />
+        <item index="3" class="java.lang.String" itemvalue="Python.naive" />
       </list>
     </recent_temporary>
   </component>
@@ -385,18 +471,83 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/Lesson1-social-network-analysis/russian.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Lesson1-social-network-analysis/naive.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="171">
+          <caret line="9" column="19" selection-start-line="9" selection-start-column="19" selection-end-line="9" selection-end-column="19" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/README.md">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="190">
           <caret line="10" column="12" selection-start-line="10" selection-start-column="12" selection-end-line="10" selection-end-column="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Lesson1-social-network-analysis/EulerianTourVer1.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="133">
+          <caret line="7" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="89" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Lesson1-social-network-analysis/eulerian_tour_ver_1.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="567">
+          <caret line="89" column="0" selection-start-line="89" selection-start-column="0" selection-end-line="89" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Lesson1-social-network-analysis/rec_naive.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="19">
+          <caret line="1" column="11" selection-start-line="1" selection-start-column="11" selection-end-line="1" selection-end-column="11" />
+          <folding>
+            <marker date="1479131137448" expanded="true" signature="20:85" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Lesson1-social-network-analysis/v;owir.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Lesson1-social-network-analysis/russian.py">
       <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="19">
+          <caret line="1" column="16" selection-start-line="1" selection-start-column="16" selection-end-line="1" selection-end-column="16" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Lesson1-social-network-analysis/clique.py">
+      <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="133">
-          <caret line="7" column="12" selection-start-line="7" selection-start-column="12" selection-end-line="7" selection-end-column="12" />
+          <caret line="7" column="0" selection-start-line="7" selection-start-column="0" selection-end-line="8" selection-end-column="17" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Lesson1-social-network-analysis/find_eulerian_tour.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="323">
+          <caret line="17" column="0" selection-start-line="17" selection-start-column="0" selection-end-line="17" selection-end-column="0" />
           <folding />
         </state>
       </provider>

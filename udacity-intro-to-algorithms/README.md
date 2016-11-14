@@ -7,7 +7,5 @@ Just let's dive in this CS world!
 ## Rubrics
 - [ ] class#1: A Social Network Analysis
 
-
-
 ## ISSUES
 Everything is good so far
