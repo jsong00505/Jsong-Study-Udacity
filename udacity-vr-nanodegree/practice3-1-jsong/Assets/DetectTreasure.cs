@@ -16,9 +16,9 @@ public class DetectTreasure : MonoBehaviour {
             if(!watched)
             {
                 Anim.SetBool("OpenBool", true);
-                Anim.SetBool("OpenBool", false);
+                //Anim.SetBool("OpenBool", false);
                 watched = true;
-                //print("The chest will be open!");
+                print("The chest will be opened!");
             }
         }
             
