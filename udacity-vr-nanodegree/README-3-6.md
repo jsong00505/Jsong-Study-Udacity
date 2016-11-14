@@ -27,6 +27,29 @@
 ## 2. Ocean Shader
 
 ### Practice2
+1. Modify the way the ocean looks
+2. Select `Scene` component and click `Ocean_material` and then you will able to see the materials
+3. Go to `Shader` folder and double click `Luna` to open
+4. Go back to Unity and select `Scene` component
+5. Press `Play` and you can see `Ocean` component created in sudden
+6. Pause to spend a few minutes playing with shading to get a stormy appearance
 
+
+## 3. Modifying a Flocking Algorithm
+
+### Practice3
+1. Go to `Script` -> `Examples` and create a `GameObject` in the scene
+2. Assign the flocking script to the objet
+3. Reset
+4. Press `Play` and see what it happened
+5. Open `ExampleFlocking` script
+6. See comments to help to guide us
+7. Make a public variable called `flockObject` like this `public GameObject flockObject;`
+8. Insted of the line to create primitive, let's delete `GameObject.CreatePrimitive(PrimitiveType.Cube);`
+9. Add `Instantiate(flockObject);`
+10. Go to `Prefabs` folder and there's a seagull that we can use for flocking script
+11. Assign the seagull to flocking script by draging that onto the flock object property
+12. You will get an error is telling us that there's no mesh renderer, so we know we should remove all references to mesh renderers in our example flocking script
+13. Go back to script and comment the line included `MeshRenderer` inside out
 
 [<- Previous](README-3-4.md) ..... [Next ->](README-3-6.md)
