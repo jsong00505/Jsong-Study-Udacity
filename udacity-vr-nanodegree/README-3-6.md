@@ -29,7 +29,7 @@
 ### Practice2
 1. Modify the way the ocean looks
 2. Select `Scene` component and click `Ocean_material` and then you will able to see the materials
-3. Go to `Shader` folder and double click `Luna` to open
+3. Go to `Shader` folder and double click `Line` to open
 4. Go back to Unity and select `Scene` component
 5. Press `Play` and you can see `Ocean` component created in sudden
 6. Pause to spend a few minutes playing with shading to get a stormy appearance
