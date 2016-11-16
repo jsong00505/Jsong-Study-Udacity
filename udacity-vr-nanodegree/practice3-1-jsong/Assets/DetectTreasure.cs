@@ -7,19 +7,27 @@ public class DetectTreasure : MonoBehaviour {
     private Animator Anim;
 
     private bool watched = false;
+
+    void Start()
+    {
+        print("--> Start() <--");
+
+        print(Anim.GetBool("OpenBool"));
+    }
     private void FixedUpdate()
     {
+        print("--> FixedUpdate() <--");
         Vector3 fwd = transform.TransformDirection(Vector3.forward);
-
+        print("BOOL->>" + Anim.GetBool("OpenBool"));
         if (Physics.Raycast(transform.position, fwd, 10))
         {
             if(!watched)
             {
                 Anim.SetBool("OpenBool", true);
-                //Anim.SetBool("OpenBool", false);
                 watched = true;
-                print("The chest will be opened!");
+                print("The chest will be open!");
             }
+
         }
             
     }
