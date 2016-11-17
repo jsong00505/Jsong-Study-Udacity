@@ -11,7 +11,6 @@ def create_tour(nodes):
     nodesLen = nodes.__len__();
     nodeTuple = [];
     for n in range(nodesLen):
-        print n
         if n == nodesLen-1:
             nodeTuple.append([nodes[n], nodes[0]])
         else:
@@ -86,4 +85,4 @@ def test():
     tour = create_tour(nodes)
     return is_eulerian_tour(nodes, tour)
 
-test()
+print test()
