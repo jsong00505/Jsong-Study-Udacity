@@ -9,19 +9,60 @@
 # [(1, 2), (2, 3), (3, 1)]
 # A possible Eulerian tour would be [1, 2, 3, 1]
 
+""" comment out for a while
+This was my first try, but it was failed...
 def find_eulerian_tour(graph):
     # your code here
     degree = get_degree(graph)
-    print "degree --> ", degree
     nodes = degree.keys()
     if check_odd(nodes, degree):
         connected = connected_nodes(graph)
-        print "connected --> ", connected
     else:
         return False
-
+    print "connected --> ", connected
+    result = []
     if connected.__len__() == nodes.__len__():
-        print "SAME"
+        for e in connected:
+            result.append(e)
+    result.append(result[0])
+    return result
+"""
+def find_eulerian_tour(graph):
+    # your code here
+    degree = get_degree(graph)
+    nodes = degree.keys()
+
+    maxDegree = 0
+    biggest = 0
+
+    for key, value in degree.iteritems():
+        if biggest < value:
+            maxDegree = key
+            biggest = value
+
+    result = []
+    if check_odd(nodes, degree):
+        # init
+        x = graph[maxDegree][0]
+        y = graph[maxDegree][1]
+        result.append(x)
+        result.append(y)
+        graph.remove((x, y))
+        for i in range(graph.__len__()):
+            for edge in graph:
+                if y == edge[0] and x != edge[1]:
+                    result.append(edge[1])
+                    x = edge[0]
+                    y = edge[1]
+                    graph.remove((x, y))
+                    break
+                elif y == edge[1] and x != edge[0]:
+                    result.append(edge[0])
+                    x = edge[1]
+                    y = edge[0]
+                    graph.remove((y, x))
+                    break
+    return result
 
 
 
@@ -36,6 +77,11 @@ def check_odd(nodes, degree):
             return False
     return True
 
+def get_x_y_list(graph):
+    dict = {}
+    for edge in graph:
+        dict[edge[0]] = edge[1]
+    return dict
 def get_degree(tour):
     degree = {}
     for x, y in tour:
@@ -77,24 +123,14 @@ def connected_nodes(tour):
             explore.add(node)
     return nodes
 
-def is_eulerian_tour(nodes, tour):
-    # all nodes must be even degree
-    # and every node must be in graph
-    degree = get_degree(tour)
-    for node in nodes:
-        try:
-            d = degree[node]
-            if d % 2 == 1:
-                print "Node %s has odd degree" % node
-                return False
-        except KeyError:
-            print "Node %s was not in your tour" % node
-            return False
-    connected = connected_nodes(tour)
-    if len(connected) == len(nodes):
-        return True
-    else:
-        print "Your graph wasn't connected"
-        return False
 
-print find_eulerian_tour([(1, 2), (2, 3), (3, 1)])
+
+print find_eulerian_tour([(1, 2), (2, 3), (3, 1)])  # passed
+print find_eulerian_tour([(0, 1), (1, 5), (1, 7), (4, 5),
+(4, 8), (1, 6), (3, 7), (5, 9),
+(2, 4), (0, 4), (2, 5), (3, 6), (8, 9)]) # passed
+
+print find_eulerian_tour([(1, 13), (1, 6), (6, 11), (3, 13),
+(8, 13), (0, 6), (8, 9),(5, 9), (2, 6), (6, 10), (7, 9),
+(1, 12), (4, 12), (5, 14), (0, 1),  (2, 3), (4, 11), (6, 9),
+(7, 14),  (10, 13)])
