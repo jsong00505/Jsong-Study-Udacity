@@ -6,9 +6,9 @@ using UnityEngine;
 public class Key : MonoBehaviour 
 {
     //Create a reference to the KeyPoofPrefab and Door
-    private GameObject KeyPoofPrefab;
-    private GameObject KeyPrefab;
-    private Door door;
+    public GameObject KeyPoofPrefab;
+    public GameObject KeyPrefab;
+    public Door door;
 
 	void Update()
 	{
@@ -21,8 +21,9 @@ public class Key : MonoBehaviour
         // Make sure the poof animates vertically
         // Call the Unlock() method on the Door
         // Destroy the key. Check the Unity documentation on how to use Destroy
-
+        Debug.Log("Get the key to open the door!!!");
+        
         door.Unlock();
-        Destroy(KeyPrefab);
+
     }
 }
