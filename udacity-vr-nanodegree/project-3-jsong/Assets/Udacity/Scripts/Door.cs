@@ -11,13 +11,15 @@ public class Door : MonoBehaviour
         if(!locked)
         {
             // Animate the door raising up
-           
+            locked = true;
+
         }
     }
 
     public void Unlock()
     {
         // You'll need to set "locked" to true here
+        
         locked = false;
     }
 }
