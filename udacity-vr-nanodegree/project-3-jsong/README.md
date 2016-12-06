@@ -1,8 +1,8 @@
 # A Maze
-Completion: 4/16
+Completion: 7/16
 ## Main Functionality
-- [ ] The student assembles a Maze scene using Unity primitives. - Starting with the project starter kit, the student has created a maze scene using Unity primitives.
-- [ ] The student populates their maze environment with waypoints, collectables, the key, a gate, and a completion UI. - The maze environment contains collectables, waypoints, a key, a gate, and the completion UI.
+- [x] The student assembles a Maze scene using Unity primitives. - Starting with the project starter kit, the student has created a maze scene using Unity primitives.
+- [x] The student populates their maze environment with waypoints, collectables, the key, a gate, and a completion UI. - The maze environment contains collectables, waypoints, a key, a gate, and the completion UI.
 
 ## Waypoint Functionality
 - [x] The student uses provided waypoints and arranges them in the scene such that it can be traveled from the start to the key, the key to the door and final UI. - The maze may be traversed using the waypoints from start to finish.
@@ -26,4 +26,4 @@ Completion: 4/16
 - [ ] Sound effect. - The student triggers a sound effect via script when the item is collected.
 
 ## Completion Functionality
-- [ ] The scene is reloaded when the UI is clicked. - The student allows the scene to be reset to its initial state such that it can be run again by scripting this functionality into the UI.
+- [x] The scene is reloaded when the UI is clicked. - The student allows the scene to be reset to its initial state such that it can be run again by scripting this functionality into the UI.
