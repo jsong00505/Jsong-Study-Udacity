@@ -7,13 +7,15 @@ public class Key : MonoBehaviour
 {
     //Create a reference to the KeyPoofPrefab and Door
     public GameObject KeyPoofPrefab;
-    public GameObject KeyPrefab;
     public Door door;
 
 	void Update()
 	{
-		//Bonus: Key Animation
-	}
+        // Bonus: Key Animation
+        // Make the object go up and down or rotate
+
+
+    }
 
 	public void OnKeyClicked()
 	{
@@ -21,9 +23,13 @@ public class Key : MonoBehaviour
         // Make sure the poof animates vertically
         // Call the Unlock() method on the Door
         // Destroy the key. Check the Unity documentation on how to use Destroy
+
+        // Animation
+        
         Debug.Log("Get the key to open the door!!!");
         
         door.Unlock();
+        Destroy(gameObject);
 
     }
 }
