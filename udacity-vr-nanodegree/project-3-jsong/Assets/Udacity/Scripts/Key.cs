@@ -32,7 +32,9 @@ public class Key : MonoBehaviour
         // Destroy the key. Check the Unity documentation on how to use Destroy
 
         // Animation
-        
+        GameObject.CreatePrimitive(PrimitiveType.Cube);
+        Instantiate(KeyPoofPrefab);
+
         Debug.Log("Get the key to open the door!!!");
         
         door.Unlock();
