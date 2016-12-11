@@ -13,12 +13,16 @@ public class Coin : MonoBehaviour
         // Make sure the poof animates vertically
         // Destroy this coin. Check the Unity documentation on how to use Destroy
 
+        // Play sound when it collected
+        soundSource.Play();
+
         // Animation
         // Make means to collect this item
-
         Debug.Log("Collected a coin!");
 
         Destroy(gameObject);
+
+
     }
 
 }

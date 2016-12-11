@@ -6,6 +6,8 @@ public class Door : MonoBehaviour
 {
     // Create a boolean value called "locked" that can be checked in Update() 
     bool locked = true;
+    public AudioSource soundSource_unlocked;
+    public AudioSource soundSource_opened;
 
     void Update() {
         // If the door is unlocked and it is not fully raised
@@ -16,9 +18,12 @@ public class Door : MonoBehaviour
             if(gameObject.transform.position.y > 25)
             {
                 locked = true;
+                // Play sound when it collected
+                soundSource_opened.Play();
                 Debug.Log("The door is opened comletely");
             } else
             {
+                soundSource_unlocked.Play();
                 Debug.Log("Running" + Time.deltaTime);
             }
             

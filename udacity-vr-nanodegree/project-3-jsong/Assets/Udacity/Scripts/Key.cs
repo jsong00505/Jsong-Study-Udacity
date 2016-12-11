@@ -6,6 +6,7 @@ using UnityEngine;
 public class Key : MonoBehaviour 
 {
     //Create a reference to the KeyPoofPrefab and Door
+    public AudioSource soundSource;
     public GameObject KeyPoofPrefab;
     public Door door;
     int directionFlag = 2;
@@ -30,6 +31,9 @@ public class Key : MonoBehaviour
         // Make sure the poof animates vertically
         // Call the Unlock() method on the Door
         // Destroy the key. Check the Unity documentation on how to use Destroy
+
+        // Play sound when it collected
+        soundSource.Play();
 
         // Animation
         GameObject.CreatePrimitive(PrimitiveType.Cube);
