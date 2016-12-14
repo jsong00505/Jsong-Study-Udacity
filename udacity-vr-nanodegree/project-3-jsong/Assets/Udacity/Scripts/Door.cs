@@ -6,6 +6,7 @@ public class Door : MonoBehaviour
 {
     // Create a boolean value called "locked" that can be checked in Update() 
     bool locked = true;
+    bool hasKey = false;
     public AudioSource soundSource_unlocked;
     public AudioSource soundSource_opened;
 
@@ -30,9 +31,20 @@ public class Door : MonoBehaviour
         }
     }
 
+    
     public void Unlock()
     {
         // You'll need to set "locked" to true here
-        locked = false;
+        hasKey = true;
+    }
+
+    public void OnDoorClicked()
+    {
+        if(hasKey)
+        {
+            Debug.Log("You have a valid key!");
+            locked = false;
+        }
+
     }
 }
