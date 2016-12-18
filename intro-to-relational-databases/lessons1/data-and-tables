@@ -1,0 +1,67 @@
+# Data and Tables
+
+## What's a database, anyway?
+
+How do we structure application data?
+
+**In memory:**
+- simple variables: numbers, strings
+- data structures: lists, dictionaries, objects
+
+** Durable Storage: **
+- flat files on disk: text, XML, JSON
+
+
+** databases **
+ - key-value store
+ - navigational DB
+ - relational DB
+
+** Relational database features: **
+- persistent storage
+- safe concurrent access by multiple programs/users <- All DBs
+- flexible query language with aggregation and join operations
+- constraints
+- rules for protecting consistency of your data
+
+## Aggregations
+
+|  Question            |  Aggregation |
+|----------------------|--------------|
+| How many rows?       | count        |
+| What's the average?  | avg          |
+| What's the greatest? | max          |
+| What's the least?    | min          |
+| What's the sum?      | sum          |
+
+## Table structure
+
+`select food from diet where species = 'orangutan'`
+
+
+** diet: **
+
+| species(string) | food(string) |
+|-----------------|--------------|
+| llama           | plants       |
+| brown bear      | fish         |
+| brown bear      | meat         |
+| brown bear      | plants       |
+| orangutan       | plants       |
+| orangutan       | insects      |
+
+** diet: **
+
+| species(string) | food1(string) | food2(string) | food3(string) |
+|-----------------|---------------|---------------|---------------|
+| llama           | plants        | -             | -             |
+| brown bear      | fish          | meat          | plants        |
+| orangutan       | plants        | insects       | -             |
+
+** diet: **
+
+| species(string) | food(string)       |
+|-----------------|--------------------|
+| llama           | plants             |
+| brown bear      | fish, meat, plants |
+| orangutan       | plants, insects    |
