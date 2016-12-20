@@ -8,7 +8,8 @@ I believe in this technology will help people a lot, and that is why I am studyi
 - [x] class#1: ND Welcome
 - [x] class#2: Hello VR World
 - [x] class#3: VR Scenes & Objects
-- [ ] class#4: VR Software Development -	**MY NOTE**: [here](README-3-1.md)
+- [x] class#4: [VR Software Development](docs/vr-software-development/README-3-1.md)
+- [ ] class#5: [VR Design](docs/vr-design/README.md)
 
 ## Career Development
 - [x] class#1: Github Profile Review(Career Elective)
