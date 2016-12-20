@@ -4,7 +4,7 @@
 
 * Lesson 1: why version control?
 	* install `git` + read-only usage
-	
+
 * Lesson 2: read + write `git`
 
 * Lesson 3: share + collaborate `GitHub`
@@ -17,7 +17,7 @@
 	Changing Control Keys
 	Fire the engine: up arrow -> space
 	Shoot: space -> enter
-	
+
 * game.js
 
 ```javascript
@@ -46,10 +46,28 @@ KEY_CODES = {
 * Linux - Diff (difference)
 
 ## CMD
-	
+
 	// Windows
 	// move to the folder where the files in
 	uda> FC favorite-app-old.html favorite-app.html
-	
+
 	// Mac or Linux
 	uda> diff - u favorite-app-old.html favorite-app.html
+
+## Reflections
+
+**How did viewing a diff between two versions help you spot the bug?**
+
+### Why should I?
+
+* This really helps!
+* you'll use this content for vc prectice
+
+### How?
+
+* One file per lesson
+* plain-text, Not rich-text
+
+## Setup
+
+[References](https://classroom.udacity.com/courses/ud775/lessons/2980038599/concepts/29975186190923#)

@@ -51,4 +51,8 @@ The people who interested in solve some ridiculous puzzles would love my VR app.
 
     Depending on how you want to create the application, it could go in many places. For me, I think that the horizontal stretch zone is a good spot. It’s relatively easy to find, but doesn’t get in the way of the front-and-center content. Another potential place would be just beneath the player - it would be a stretch, but it would never interfere with any of our content that way. The GVR Example UI uses this area.
 
+## Personal bubble in VR starts
+
+notes, now I am not normal right now. next time to do this course
+
 [<- Previous](README-4-1.md) ..... [Next ->](README-4-3.md)
