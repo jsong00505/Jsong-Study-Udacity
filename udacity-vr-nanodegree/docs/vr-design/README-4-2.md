@@ -53,6 +53,25 @@ The people who interested in solve some ridiculous puzzles would love my VR app.
 
 ## Personal bubble in VR starts
 
-notes, now I am not normal right now. next time to do this course
+In VR starts, the personal bubble will be in one meter.
+
+*Answer:*
+
+    0.5 Meters is the general distance where people begin to feel uncomfortable. How close was your guess?
+
+## Text
+
+This text is hard to read on a mobile VR device.
+
+**This thicker text is easier to read**
+
+### This is bigger text is also easier to read
+
+* 1 Unity Unit = 1 Meters
+* Remember to test on device
+
+## Sketch
+
+**NEED TO DO!!!**
 
 [<- Previous](README-4-1.md) ..... [Next ->](README-4-3.md)
