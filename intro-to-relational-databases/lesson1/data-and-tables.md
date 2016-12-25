@@ -65,3 +65,68 @@ How do we structure application data?
 | llama           | plants             |
 | brown bear      | fish, meat, plants |
 | orangutan       | plants, insects    |
+
+## How Queries Happen
+
+![How-Queries-Happen](../lesson1-pic/how-queries-happen.png)
+
+zoo=> `select food from diet where species = 'orangutan';`
+
+food
+--------
+plants
+insects
+(2 rows)
+
+z==> `select 2+2;`
+
+?column?
+--------
+4
+(1 row)
+
+z==> `select 2+2 as sum;``
+
+sum
+--------
+4
+(1 row)
+
+## Related Tables
+![Related-Tables](../lesson1-pic/related-tables.png)
+
+## Uniqueness and Keys
+* name
+* city name
+* parking ticket
+
+![Uniqueness-and-Keys](../lesson1-pic/uniqueness-and-keys.png)
+
+## Primary Key
+* Student ID number
+* Email address
+
+## Joining Tables
+
+** animals : **
+- name(string)
+- species(string)
+- food(string)
+
+** diet **
+- species(string)
+- food(string)
+
+Query #1
+
+      select animals.name, animals.species, diet.food
+          from animals join diet
+          on animals.species = diet.species;
+
+Query #2
+
+      select animals.name, animals.species, diet.food
+          from animals join diet
+          on animals.species = diet.species;
+
+![Joining-Tables](../lesson1-pic/joining-tables.png)
