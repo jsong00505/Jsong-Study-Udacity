@@ -71,3 +71,65 @@ KEY_CODES = {
 ## Setup
 
 [References](https://classroom.udacity.com/courses/ud775/lessons/2980038599/concepts/29975186190923#)
+
+## Versions
+
+- Saving manual copies
+- Dropbox
+- Google Docs
+- Wikipedia
+
+## Properties of a VCS for Code
+
+**Feature Comparison Chart**
+
+| Method        | Any Editor | Use Offline | Manual Save |
+|---------------|------------|-------------|-------------|
+| Manual Saving | Yes        | Yes         | Yes         |
+| Dropbox       | Yes        | No          | No          |
+| Google Docs   | No         | No          | No          |
+| Wikipedia     | No         | No          | Yes         |
+| Git           | Yes        | Yes         | Yes         |
+| SVN           | Yes        | No          | Yes         |
+
+## When to Save
+
+		Q: As a programmer, when would you want to have a version of your code saved?
+		A: Whenever there is a long pause in editing
+
+## Commits
+
+- fix off-by-one bug
+- add cool new Feature
+- improve user docs
+
+![Concept-Map](../res/lesson1/concept-map.png)
+
+## Using Git to View History
+
+- TYPE ON CMD: git log
+
+		::: OUTPUT :::
+		commit 67190a32b8f8613bd83d364c56897aec37964844
+		Author: jsong-pc <jsong00505@gmail.com>
+		Date:   Mon Dec 26 23:00:35 2016 +0900
+
+		feat: new project - puzzler
+
+		made project and do some practices for the class
+
+- TYPE ON CMD: git diff 67190a32b8f8613bd83d364c56897aec37964844 b126249b20a19fcb3769c7945f7c72f706dbbe2a
+
+		::: OUTPUT :::
+		diff --git a/README.md b/README.md
+		index ebce37c..bb6ace5 100644
+		--- a/README.md
+		+++ b/README.md
+		@@ -12,6 +12,8 @@ Checked list is completed to study:
+		- [ ] class#2: [udacity-vr-nanodegree][udacity-vr-nanodegree-site]
+		- [x] class#3: [udacity-writing-readmes][udacity-writing-readmes-site]
+		- [ ] class#4: [udacity-intro-to-algorithms][udacity-intro-to-algorithms-site]
+		+- [ ] class#5: udacity-intro-to-relational-databases
+		+- [ ] class#6: udacity-how-to-use-git-and-github
+
+![Concept-Map-Add-Diff](../res/lesson1/concept-map-add-diff.png)

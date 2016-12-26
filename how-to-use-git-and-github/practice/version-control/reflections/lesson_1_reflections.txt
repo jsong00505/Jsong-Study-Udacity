@@ -1,3 +1,8 @@
 Q: How did viewing a diff between two versions of a file help you see the bug that was introduced?
 
 A: Show the differences line by line, so I could find which line is different.
+
+
+Q: How could having easy access to the entire history of a file make you a more efficient programmer in the long term?
+
+A: I could know what I have changed in history, and also when.
