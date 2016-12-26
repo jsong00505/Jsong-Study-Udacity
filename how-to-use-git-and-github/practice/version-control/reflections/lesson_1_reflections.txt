@@ -6,3 +6,7 @@ A: Show the differences line by line, so I could find which line is different.
 Q: How could having easy access to the entire history of a file make you a more efficient programmer in the long term?
 
 A: I could know what I have changed in history, and also when.
+
+Q: What do you think are the pros and cons of manually choosing when to create a commit, like you do in Git, vs having versions automatically saved, like Google Docs does
+
+A: Pros is I could see the history of files, so I can notice when I changed the lines of code. However cons is I should commit by myself. Sometimes I might forget to commit. If so, I can miss the moment in my history.
