@@ -133,3 +133,29 @@ KEY_CODES = {
 		+- [ ] class#6: udacity-how-to-use-git-and-github
 
 ![Concept-Map-Add-Diff](../res/lesson1/concept-map-add-diff.png)
+
+## one Commit per Logical Change
+
+### One Commit per Logical Change Solution
+
+#### You commit all the changes required to add a new feature, which you’ve been working on for a week. You haven’t committed since you started working on it.
+
+This commit seems too big. It's easier to understand what each commit does if each only does one thing and is fairly small. Going a week without committing is not the best idea.
+
+#### You found three typos in your README. You fix and commit the first.
+
+This commit seems too small. It would be better to fix all three typos, then commit. That way, your history won't get too cluttered with typo fixes. Plus, you don’t need to worry about introducing bugs to a README, so bundling changes together is more likely to be a good idea.
+
+#### You commit all the changes required to add a new feature, which you’ve been working on for an hour.
+
+This is probably a good size for a commit. All the work is on a single feature, so the commit will have a clear logical purpose. After an hour, the diff will probably have a fair amount of content in it, but not too much to understand.
+
+On the other hand, sometimes after working for an hour you’ll have run into more than one natural committing point, in which case you would want to break the feature up into smaller commits. Because of this, “too big” could also be a reasonable answer here.
+
+#### You fix two small bugs in different functions and commit them both at once.
+
+This commit is probably too big. It would have been better to commit after the first bug fix, since the two bug fixes aren't related to each other.
+
+### Judgment Call
+
+Choosing when to commit is a judgment call, and it's not always cut-and-dried. When choosing whether to commit, just keep in mind that each commit should have one clear, logical purpose, and you should never do too much work without committing.
