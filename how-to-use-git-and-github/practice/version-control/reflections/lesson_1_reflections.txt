@@ -10,3 +10,17 @@ A: I could know what I have changed in history, and also when.
 Q: What do you think are the pros and cons of manually choosing when to create a commit, like you do in Git, vs having versions automatically saved, like Google Docs does
 
 A: Pros is I could see the history of files, so I can notice when I changed the lines of code. However cons is I should commit by myself. Sometimes I might forget to commit. If so, I can miss the moment in my history.
+
+Q: Why do you think some version control systems, like Git, allow saving multiple files in one commit, while others, like Google Docs, treat each file separately?
+
+A: Usually, programmers tries to code the program separating the functionality. When they make a function, they may change multiple files. So that is why some version control systems, like Git, need to track the multiple files in once.
+
+Q: How can you use the commands git log and git diff to view the history of files?
+
+A:
+1) git log: git log --stat
+2) git diff: git diff commit-ID
+
+Q: How might using version control make you more confident to make changes that could break something?
+
+A: I can use "check out" function for tracking the history of my file!

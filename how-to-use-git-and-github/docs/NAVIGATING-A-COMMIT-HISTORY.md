@@ -159,3 +159,65 @@ This commit is probably too big. It would have been better to commit after the f
 ### Judgment Call
 
 Choosing when to commit is a judgment call, and it's not always cut-and-dried. When choosing whether to commit, just keep in mind that each commit should have one clear, logical purpose, and you should never do too much work without committing.
+
+## Tracking Across Multiple Files
+
+Check the box next to each example below in which it makes sense to track multiple files together rather than separately:
+
+- [ ] competition-style coding
+- [x] html and css files that make up a webpage
+- [ ] photos you have photoshopped
+- [x] A novel, split up by chapter
+
+## Git Commits Across Multiple Files
+
+1) Type `git log --stat`
+2) Choose some files to compare
+3) Try to diff with two version of a file
+
+
+## Using git log and git diff
+
+* What is the ID of the commit with the message "Revert controls"?
+`b0678b161fcf74467ed3a63110557e3d6229cfa6`
+
+* How many lines were added in that commit?
+`4`
+
+* How many lines were deleted?
+`4`
+
+* solutions
+
+1) Type `git log --stat`
+2) Find the commit message "Revert controls"
+3) You will see below
+
+```
+commit b0678b161fcf74467ed3a63110557e3d6229cfa6
+Author: cbuckey <caroline@udacity.com>
+Date:   Mon May 24 04:15:21 2010 -0700
+
+    Revert controls
+
+ game.js | 8 ++++----
+ 1 file changed, 4 insertions(+), 4 deletions(-)
+```
+
+
+## Git Errors and Warnings Solution
+
+**Should not be doing an octopus**
+Octopus is a strategy Git uses to combine many different versions of code together. This message can appear if you try to use this strategy in an inappropriate situation.
+
+**You are in 'detached HEAD' state**
+HEAD is what Git calls the commit you are currently on. You can “detach” the HEAD by switching to a previous commit, which we’ll see in the next video. Despite what it sounds like, it’s actually not a bad thing to detach the HEAD. Git just warns you so that you’ll realize you’re doing it.
+
+**Panic! (the 'impossible' happened)**
+This is a real error message, but it’s not output by Git. Instead it’s output by GHC, the compiler for a programming language called Haskell. It’s reserved for particularly surprising errors!
+
+**Takeaway** We hope these errors and warnings amused you as much as they amused us! Now that you know what kind of errors Git can throw, you’re ready to start checking out previous versions of files with Caroline.
+
+## Checking Out Old Versions of Code
+
+Type `git checkout commit-ID`
