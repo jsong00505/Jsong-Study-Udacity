@@ -24,3 +24,7 @@ A:
 Q: How might using version control make you more confident to make changes that could break something?
 
 A: I can use "check out" function for tracking the history of my file!
+
+Q: Now that you have your workspace set up, what do you want to try using Git for?
+
+A: I want to try tracking my project using Git
