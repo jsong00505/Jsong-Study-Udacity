@@ -72,6 +72,6 @@ This text is hard to read on a mobile VR device.
 
 ## Sketch
 
-![Sketch](Sketch.jpg)
+![Sketch](Sketch.JPG)
 
 [<- Previous](README-4-1.md) ..... [Next ->](README-4-3.md)
