@@ -1,0 +1,15 @@
+Q: What happens when you initialize a repository? Why do you need to do it?
+
+A: I should initialize a repository, so I can use Git in the directory.
+
+Q: How is the staging area different from the working directory and the repository? What value do you think it offers?
+
+A: Staging area makes users manage their files trackable or untrackable. So users only track the files they want.
+
+Q: How can you use the staging area to make sure you have one commit per logical change?
+
+A: I can use the staging area by using the command 'git diff' and 'git diff --staged'. That command and option shows what I have changed.
+
+Q: What are some situations when branches would be helpful in keeping your history organized? How would branches help?
+
+A: When I want to add a new feature and the feature is not stable, I can use the branches. That is because new feature branch is not affect to my original branch.
