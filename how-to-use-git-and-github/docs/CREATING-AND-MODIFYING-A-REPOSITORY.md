@@ -25,3 +25,10 @@ git checkout easy-mode
 
 git log --graph --oneline `branch name1` `branch name2`
 	ex) git log --graph --oneline master coin
+
+## Detached HEAD Revisited
+
+git checkout -b new_branch_name
+
+1) git branch new_branch_name
+2) git checkout new_branch_name

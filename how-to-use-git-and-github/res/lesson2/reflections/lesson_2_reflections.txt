@@ -13,3 +13,15 @@ A: I can use the staging area by using the command 'git diff' and 'git diff --st
 Q: What are some situations when branches would be helpful in keeping your history organized? How would branches help?
 
 A: When I want to add a new feature and the feature is not stable, I can use the branches. That is because new feature branch is not affect to my original branch.
+
+Q: How do the diagrams help you visualize the branch structure?
+
+A: I can see which one is original branch(I mean master) and when it merged. It is really helpful if the diagrams are visualized.
+
+Q: What is the result of merging two branches together? Why do we represent it in the diagram the way we do?
+
+A: The result is one master branch. The diagram makes us easy to understand.
+
+Q: What are the pros and cons of Git’s automatic merging vs. always doing merges manually?
+
+A: Pros is really easy to merge, and I don't need to compare all of my files changed. However cons is if the confilct is occured, I have to figure it out what problem is or have to talk to other branch's owner.
