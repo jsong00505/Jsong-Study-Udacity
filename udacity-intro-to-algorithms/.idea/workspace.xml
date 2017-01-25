@@ -169,8 +169,8 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="Scratches" />
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -194,7 +194,7 @@
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../intro-to-relational-databases/fsnd-virtual-machine/vagrant" />
   </component>
   <component name="RunManager" selected="Python.complete_graph">
     <configuration default="false" name="eulerian_tour_ver_1" type="PythonConfigurationType" factoryName="Python" temporary="true">
