@@ -94,3 +94,44 @@ create table grades (
 ![foreign-keys-1](../lesson4-pic/foreign-keys-1.png)
 
 ![foreign-keys-2](../lesson4-pic/foreign-keys-2.png)
+
+## Self Joins
+
+```SQL
+select a.id, b.id
+from residences as a,
+     residences as b
+where
+     a.building = b.building
+     and a.room = b.room;
+```
+
+## Counting What Isn't There
+
+There is a way to get the database to give us a count with a zero in it.
+```SQL
+select products.name, products.sku, count(sales.sku) as num
+  from products left join sales
+    on products.sku = sales.sku
+  group by products.sku;
+```
+
+#### Left Join
+
+A regular (inner) join returns only those rows where the two tables have entries matching the join condition. A **left join** returns all those rows, plus the rows where the left table has an entry but the right table doesn’t. And a right join does the same but for the right table.
+
+## Subqueries
+
+Subqueries are a huge topic.
+```SQL
+select avg(bigscore) from
+  (select max(score)
+    as bigscore
+  from mooseball
+    group by team)
+  as maxes
+```
+
+## Views
+
+A **view** is a **select** query stored in the database in a way that lets you use it like a table
