@@ -12,8 +12,8 @@ Checked list is completed to study:
 - [ ] class#2: [udacity-vr-nanodegree][udacity-vr-nanodegree-site]
 - [x] class#3: [udacity-writing-readmes][udacity-writing-readmes-site]
 - [ ] class#4: [udacity-intro-to-algorithms][udacity-intro-to-algorithms-site]
-- [ ] class#5: udacity-intro-to-relational-databases
-- [ ] class#6: udacity-how-to-use-git-and-github
+- [x] class#5: udacity-intro-to-relational-databases
+- [x] class#6: udacity-how-to-use-git-and-github
 
 
 ## LICENSE
