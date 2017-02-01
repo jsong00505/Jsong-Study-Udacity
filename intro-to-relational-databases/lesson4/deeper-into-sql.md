@@ -135,3 +135,7 @@ select avg(bigscore) from
 ## Views
 
 A **view** is a **select** query stored in the database in a way that lets you use it like a table
+
+```SQL
+create view viewname as select...
+```
