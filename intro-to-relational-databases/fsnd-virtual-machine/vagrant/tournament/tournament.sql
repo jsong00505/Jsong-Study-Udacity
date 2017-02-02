@@ -8,16 +8,13 @@
 
 CREATE TABLE players (
     id serial primary key,
-    name text,
-    wins integer DEFAULT 0,
-    matches integer DEFAULT 0
+    name text
 );
 
 CREATE TABLE matches (
     id serial primary key,
-    player_name text,
-    wins integer,
-    matches integer
+    wins integer DEFAULT 0,
+    matches integer DEFAULT 0
 );
 
 

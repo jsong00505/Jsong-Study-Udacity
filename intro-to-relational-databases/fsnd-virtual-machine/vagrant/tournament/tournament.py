@@ -72,7 +72,7 @@ def playerStandings():
     """
     db = connect()
     c = db.cursor()
-    query = "select id, name, wins, matches from players order by wins desc"
+    query = "select players.id, players.name, COALESCE(matches.wins,0), COALESCE(matches.matches,0) from players left join matches on players.id = matches.id order by matches.wins desc"
     c.execute(query)
     res = c.fetchall()
     db.close()
@@ -86,6 +86,26 @@ def reportMatch(winner, loser):
       winner:  the id number of the player who won
       loser:  the id number of the player who lost
     """
+    db = connect()
+    c = db.cursor()
+
+    query = "select id, name, wins, matches from players where id = %s"
+    c.execute(query, (winner, ))
+    winner_info = c.fetchone()
+
+    query = "select id, name, wins, matches from players where id = %s"
+    c.execute(query, (loser,))
+    loser_info = c.fetchone()
+
+    query = "update players set wins = %s, matches = %s where id = %s"
+    c.execute(query, (winner_info[2]+1, winner_info[3]+1, winner))
+
+    query = "update players set matches = %s where id = %s"
+    c.execute(query, (loser_info[3]+1, loser))
+
+    db.commit()
+    db.close()
+
  
  
 def swissPairings():

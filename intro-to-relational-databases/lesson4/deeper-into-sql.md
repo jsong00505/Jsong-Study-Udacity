@@ -120,6 +120,11 @@ select products.name, products.sku, count(sales.sku) as num
 
 A regular (inner) join returns only those rows where the two tables have entries matching the join condition. A **left join** returns all those rows, plus the rows where the left table has an entry but the right table doesn’t. And a right join does the same but for the right table.
 
+```SQL
+select * from
+  from table1 left join table2
+    on restriction
+```
 ## Subqueries
 
 Subqueries are a huge topic.
