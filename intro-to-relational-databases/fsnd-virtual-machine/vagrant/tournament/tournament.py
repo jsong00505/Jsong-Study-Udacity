@@ -35,10 +35,10 @@ def countPlayers():
     c = db.cursor()
     query = "select count(*) from players"
     c.execute(query)
-    numb = c.fetchone()
+    res = c.fetchone()
     db.close()
 
-    return numb
+    return res[0]
 
 
 def registerPlayer(name):
@@ -52,7 +52,7 @@ def registerPlayer(name):
     """
     db = connect()
     c = db.cursor()
-    c.execute("insert into players values(%s)", (name,))
+    c.execute("insert into players (name) values (%s)", (name,))
     db.commit()
     db.close()
 
@@ -70,7 +70,14 @@ def playerStandings():
         wins: the number of matches the player has won
         matches: the number of matches the player has played
     """
+    db = connect()
+    c = db.cursor()
+    query = "select id, name, wins, matches from players order by wins desc"
+    c.execute(query)
+    res = c.fetchall()
+    db.close()
 
+    return res
 
 def reportMatch(winner, loser):
     """Records the outcome of a single match between two players.
