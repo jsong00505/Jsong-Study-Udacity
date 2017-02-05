@@ -54,6 +54,12 @@ def registerPlayer(name):
     c = db.cursor()
     c.execute("insert into players (name) values (%s)", (name,))
     db.commit()
+
+    c.execute("select id from players where name = %s", (name,))
+    id = c.fetchone()
+
+    c.execute("insert into matches (id, wins, matches) values (%s, %s, %s)", (id, 0, 0,))
+    db.commit()
     db.close()
 
 
@@ -89,19 +95,19 @@ def reportMatch(winner, loser):
     db = connect()
     c = db.cursor()
 
-    query = "select id, name, wins, matches from players where id = %s"
+    query = "select id, wins, matches from matches where id = %s"
     c.execute(query, (winner, ))
     winner_info = c.fetchone()
 
-    query = "select id, name, wins, matches from players where id = %s"
+    query = "select id, wins, matches from matches where id = %s"
     c.execute(query, (loser,))
     loser_info = c.fetchone()
 
-    query = "update players set wins = %s, matches = %s where id = %s"
-    c.execute(query, (winner_info[2]+1, winner_info[3]+1, winner))
+    query = "update matches set wins = %s, matches = %s where id = %s"
+    c.execute(query, (winner_info[1]+1, winner_info[2]+1, winner))
 
-    query = "update players set matches = %s where id = %s"
-    c.execute(query, (loser_info[3]+1, loser))
+    query = "update matches set matches = %s where id = %s"
+    c.execute(query, (loser_info[2]+1, loser))
 
     db.commit()
     db.close()
@@ -123,5 +129,13 @@ def swissPairings():
         id2: the second player's unique id
         name2: the second player's name
     """
+    req = playerStandings()
+    pairing = []
+    i = 0
+
+    for reqInfo1, reqInfo2 in zip(req[0::2], req[1::2]):
+        pairingInfo = (reqInfo1[0], reqInfo1[1], reqInfo2[0], reqInfo2[1])
+        pairing.append(pairingInfo)
+    return pairing
 
 
